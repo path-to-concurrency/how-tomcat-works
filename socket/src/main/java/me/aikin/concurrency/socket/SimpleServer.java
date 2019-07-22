@@ -29,7 +29,6 @@ public class SimpleServer {
                 socket.close();
             } catch (Exception e) {
                 e.printStackTrace();
-                continue;
             }
         }
 
