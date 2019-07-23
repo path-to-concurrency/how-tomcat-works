@@ -8,11 +8,11 @@
 
 
 ### Tasking
-* parse request uri
-* response msg
-* response static resource
-* shut down uri
+[x] parse request uri
+[x] response msg
+[x] response static resource
+[ ] shut down uri
 
 ### ???
-* 什么是 socket ？
-* read file with NIO？ 
+[ ] 什么是 socket ？
+[ ] read file with NIO？ 
