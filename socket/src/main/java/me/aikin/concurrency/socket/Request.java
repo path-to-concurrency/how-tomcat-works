@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Optional;
 
+/**
+ * @author aikin
+ */
 public class Request {
     private final InputStream inputStream;
 

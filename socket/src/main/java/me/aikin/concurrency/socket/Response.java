@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URL;
 
+/**
+ * @author aikin
+ */
 public class Response {
     private final OutputStream outputStream;
 
@@ -13,7 +16,7 @@ public class Response {
         this.outputStream = outputStream;
     }
 
-    void sendStaticResponse(String staticResourcePath) throws IOException {
+    public void sendStaticResponse(String staticResourcePath) throws IOException {
         String msg = "HTTP/1.1 404 File Not Found\r\n" +
                 "Content-Type: text/html\r\n" +
                 "\r\n";
