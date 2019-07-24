@@ -8,7 +8,7 @@ import java.io.IOException;
 public class StaticResourceProcessor {
     public void process(Request request, Response response) {
         try {
-            response.sendStaticResponse(Constants.STATIC_RESOURCE.concat(request.getUri().get()));
+            response.sendStaticResponse();
         } catch (IOException e) {
             e.printStackTrace();
         }

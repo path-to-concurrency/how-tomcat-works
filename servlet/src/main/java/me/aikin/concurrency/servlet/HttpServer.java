@@ -29,7 +29,7 @@ public class HttpServer {
             Response response = new Response(outputStream, request);
 
             if (uriOptional.isPresent()) {
-                if (uriOptional.get().startsWith("/servlet")) {
+                if (uriOptional.get().startsWith("/servlet/")) {
                     ServletProcessor servletProcessor = new ServletProcessor();
                     servletProcessor.process(request, response);
                 } else {

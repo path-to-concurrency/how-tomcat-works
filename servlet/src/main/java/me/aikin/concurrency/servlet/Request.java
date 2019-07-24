@@ -16,6 +16,9 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * @author aikin
+ */
 public class Request implements ServletRequest {
     private final InputStream inputStream;
 

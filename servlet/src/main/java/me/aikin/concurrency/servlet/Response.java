@@ -22,12 +22,12 @@ public class Response implements ServletResponse {
         this.request = request;
     }
 
-    public void sendStaticResponse(String staticResourcePath) throws IOException {
+    public void sendStaticResponse() throws IOException {
         String msg = "HTTP/1.1 404 File Not Found\r\n" +
                 "Content-Type: text/html\r\n" +
                 "\r\n";
         byte[] bytes = new byte[1024];
-        URL resource = getClass().getClassLoader().getResource(staticResourcePath);
+        URL resource = getClass().getClassLoader().getResource(Constants.STATIC_RESOURCE.concat(request.getUri().get()));
         File file = new File(resource.getPath());
         if (file.exists()) {
             FileInputStream fileInputStream = new FileInputStream(file);
