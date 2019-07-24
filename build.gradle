@@ -11,6 +11,10 @@ subprojects {
         jcenter()
     }
 
+    ext {
+        junitVersion = "4.12"
+    }
+
     dependencies {
         testCompile "junit:junit:$junitVersion"
     }

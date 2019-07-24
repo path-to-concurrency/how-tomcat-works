@@ -1,5 +1,6 @@
 rootProject.name = 'how-tomcat-works'
 include 'socket'
 include 'servlet'
+include 'connector'
 
 
