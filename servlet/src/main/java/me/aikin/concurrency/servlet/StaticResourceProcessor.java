@@ -6,7 +6,7 @@ import java.io.IOException;
  * @author aikin
  */
 public class StaticResourceProcessor {
-    public void process(Request request, Response response) {
+    public void process(RequestFacade request, ResponseFacade response) {
         try {
             response.sendStaticResponse();
         } catch (IOException e) {

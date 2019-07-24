@@ -20,7 +20,7 @@ public class ServletProcessor {
             Class<?> aClass = this.getClass().getClassLoader().loadClass("me.aikin.concurrency.servlet.".concat(servletName));
             Servlet servlet = (Servlet) aClass.newInstance();
 
-            servlet.service(request, response);
+            servlet.service(new RequestFacade(request), new ResponseFacade(response));
 
         } catch (ClassNotFoundException | IllegalAccessException | InstantiationException | ServletException | IOException e) {
             e.printStackTrace();

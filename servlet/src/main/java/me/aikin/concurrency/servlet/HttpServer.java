@@ -34,7 +34,7 @@ public class HttpServer {
                     servletProcessor.process(request, response);
                 } else {
                     StaticResourceProcessor staticResourceProcessor = new StaticResourceProcessor();
-                    staticResourceProcessor.process(request, response);
+                    staticResourceProcessor.process(new RequestFacade(request), new ResponseFacade(response));
                 }
             }
 
