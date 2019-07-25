@@ -8,6 +8,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Optional;
 
+/**
+ * @author aikin
+ */
 public class HttpServer {
     private static final int PORT = 8080;
 

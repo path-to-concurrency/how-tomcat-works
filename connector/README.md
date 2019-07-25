@@ -2,7 +2,8 @@
 
 
 ### Tasking
-[ ] connector , 请求生产者
+[ ] connector single thread, 请求生产者
+[ ] http processor
 [ ] processor, resource 处理
 
 ### Code Smells
