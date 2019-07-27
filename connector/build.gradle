@@ -5,4 +5,5 @@ apply plugin: 'java'
 
 dependencies {
     compile "javax.servlet:javax.servlet-api:4.0.1"
+    compile "org.apache.tomcat:catalina:6.0.26"
 }
